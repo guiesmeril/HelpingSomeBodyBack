@@ -1,12 +1,13 @@
-const Ong = require('../models/Ong');
- 
+//const Ong = require('../models/Ong');
+ const Voluntario = require ('../models/Voluntario');
+
 module.exports = {
 
     async auth(req,res) {
          
         try{
             const {email, senha} = req.body;
-            const user = await Ong.findOne ({
+            const user = await Voluntario.findOne ({
                 where: {email: email,
                        senha: senha},
             });
