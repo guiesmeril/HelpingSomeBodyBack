@@ -11,7 +11,20 @@ module.exports = {
         } catch (err) {
             return err;
         }
+    },
+    async listar(req, res) {
+        try{
+            const donates = await Donates.findAll();
+            res.status(200).json(donates);
+        }catch(err){
+            return err;
+        }
     }
+
+
+
+
     }
+
 
 

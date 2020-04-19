@@ -7,6 +7,8 @@ class Donates extends Model {
             title: DataTypes.STRING,
             description: DataTypes.STRING,
             cpf: DataTypes.STRING,
+            telefone: DataTypes.STRING,
+            emails: DataTypes.STRING,
         },{
             sequelize
         })
