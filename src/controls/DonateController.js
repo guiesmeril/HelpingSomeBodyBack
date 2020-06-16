@@ -19,12 +19,21 @@ module.exports = {
         }catch(err){
             return err;
         }
-    }
+    },
+
+    async detalhe(req, res) {
+        try{
+            const donates = await Donates.findByPk(req.params.id);
+            res.status(200).json(donates);
+                
+        }catch(err){
+            return err;
+        }
+
+        
+
+    },
 
 
 
-
-    }
-
-
-
+}

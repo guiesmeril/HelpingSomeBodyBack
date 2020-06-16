@@ -9,6 +9,8 @@ class Donates extends Model {
             cpf: DataTypes.STRING,
             telefone: DataTypes.STRING,
             emails: DataTypes.STRING,
+            cidade: DataTypes.STRING,
+            estado: DataTypes.STRING,
         },{
             sequelize
         })

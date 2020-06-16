@@ -20,5 +20,7 @@ routes.post('/newdonates', DonateController.create);
 
 routes.get('/donates', DonateController.listar); 
 
+routes.get('/donates/:id', DonateController.detalhe); 
+
 
 module.exports = routes;
